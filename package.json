@@ -2,9 +2,10 @@
   "name": "expressjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,13 @@
   "homepage": "https://github.com/cnhung2001/express_js#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.67.0",
+    "script": "^0.1.4"
   }
 }
